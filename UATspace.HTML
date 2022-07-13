@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--week 1 assigment, html tags
+Assignment: Launching your UAT Space Program HTML Document Tags
+juan garcia
+juan4life1@live.com-->
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script scr="dataloader-1.js"></script>
+    <script src="launchdatadisplay.js"></script>
+    <script src="code.js"></script>
+    <title>
+        juan garcia's uatspace page
+    </title>
+    <script>
+        var thetime = new Data();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getdata();
+    </script>
+</head>
+<!--table to hold UAT space logo and header text-->
+<body>
+    <table>
+        <tr>
+            <td><img src="UATspaceLogo-2.jpg"></td>
+            <td>
+                <h1>
+                    UAT space program
+                </h1>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+<!--data table-->
+<table id="data" border="2" width="70%">
+    <col style="width: 35%">
+    <col style="width: 35%"> 
+    <thead>
+           <th>
+            Data type
+           </th>
+           <th>
+            Reading
+           </th>
+    </thead>
+    <tbody>
+        <!--table entry for seconds-->
+        <tr id="seconds">
+        </tr><!--table entry for latitude-->
+        <tr id="latitude">
+        </tr><!--table entry for longitude-->
+        <tr id="longitude">
+        </tr><!--table entry for gps_altitude-->
+        <tr id="gps_altitude">
+        </tr><!--table entry for bmp_altitude-->
+        <tr id="bmp_altitude">
+        </tr><!--table entry for bmp_pressure-->
+        <tr id="bmp_pressure">
+        </tr><!--table entry for bmp_temeprature-->
+        <tr id="bmp_temperature">
+        </tr><!--table entry for dig_temeprature-->
+        <tr id="dig_temprature">
+        </tr><!--table entry for css_temeprature-->
+        <tr id="css_temprature">
+        </tr><!--table entry for css_eCO2-->
+        <tr id="css_eCO2">
+        </tr><!--table entry for css_TVOC-->
+        <tr id="css_TVOC">
+        </tr><!--table entry for UV-->
+        <tr id="UV">
+        </tr><!--table entry for accaelx-->
+        <tr id="accelx">
+        </tr><!--table entry for accaely-->
+        <tr id="accely">
+        </tr><!--table entry for accaelz-->
+        <tr id="accelz">
+        </tr><!--table entry for magenticx-->
+        <tr id="magneticx">
+        </tr><!--table entry for magenticY-->
+        <tr id="magneticy">
+        </tr><!--table entry for magenticz-->
+        <tr id="magneticZ">
+        </tr><!--table enty for gyrox-->
+        <tr id="gyrox">
+        </tr><!--table enty for gyroY-->
+        <tr id="gyroy">
+        </tr><!--table enty for gyroz-->
+        <tr id="gyroz">
+        </tr>
+    </tbody>
+</table>
+<br>
+<button onclick="startfun();"class="button" id="startbutton">start</button>
+<button onclick="stopfun();" class="button"id="stopbutton">stop</button>
+<br>
+<!--the craps game is part of our UAT space program to test the brain funtion
+to see how it works due to long exposure in zero gravity and how will dose the brain 
+develops-->
+<h2>please try your hands at craps!</h2>
+<div id="crapsstatus">ctaps status</div><br>
+<button onclick="playcraps();"class="button">play craps</button><br>
+<br>
+<br>
+<h3>play space station sounds</h3>
+<h4>warning, it may get loud</h4>
+<button class="lgbutton" onclick="playstation();">play space station sounds</button>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-color: lightgray;
+}
+
+.button{
+    width: 100px;
+height: 30px;
+border-radius: 5px;
+background-color: white; 
+border-color: black;
+}
